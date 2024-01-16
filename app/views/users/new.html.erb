@@ -1,0 +1,11 @@
+<h1>Sign up</h1>
+
+<%= form_for @user do |f| %>
+  <%= f.label :email %>
+  <%= f.input :email %>
+  <%= f.label :name %>
+  <%= f.input :name %>
+
+  <%= f.submit "Sign up" %>
+
+<% end %>

@@ -89,9 +89,12 @@ Rails.application.configure do
 
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
-  #   "example.com",     # Allow requests from example.com
-  #   /.*\.example\.com/ # Allow requests from subdomains like `www.example.com`
+  #   "trucoceleste.com",     # Allow requests from example.com
+  #   /.*\.trucoceleste\.com/ # Allow requests from subdomains like `www.example.com`
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_token: Rails.application.credentials.postmark.api_token }
 end

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyText
+  verified_at: 2024-01-15 15:10:07
+  token: MyString
+  name: MyString
+
+two:
+  email: MyText
+  verified_at: 2024-01-15 15:10:07
+  token: MyString
+  name: MyString
