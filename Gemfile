@@ -75,3 +75,5 @@ group :test do
 end
 
 gem "postmark-rails", "~> 0.22.1"
+
+gem "webauthn", "~> 3.1"
