@@ -8,7 +8,7 @@ export default function Index() {
       <Text style={styles.title}>Truco</Text>
       <Text>The Rules of the Game are Simple</Text>
       <Link href="/games/new" style={styles.link}>Start a New Game</Link>
-      </View>
+    </View>
   );
 }
 
